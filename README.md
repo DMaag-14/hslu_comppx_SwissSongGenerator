@@ -12,10 +12,13 @@ We have compiled a dataset of 200 Swiss dialect songs from [songtexte.com](https
 **Training Progress**
 ![Training Progress](./_Material/training-progress.png)
 
-Then we exported the trained model from the ML5 CharRNN in ML5.js. We used also a Colab-Notebook for this in which e set up the following Code:
-![Training Progress](./_Material/training-progress.png)
+Then we exported the trained model from the ML5 CharRNN in ML5.js. We used also a Colab-Notebook for this in which e set up the following Code, which is from the ML5 tutorial:
 
-so that we could generate song lyrics locally in a selfcreated frontend.
+![Code](./_Material/code.JPG)
+
+Befor running the Code we had to upload the git-reposetory from the Tutorial, which allowed us to use a model to train.
+
+At the end we had our trained model which we integrate in our interfaco so we could generate song lyrics locally in a selfcreated frontend.
 
 ## Frontend
 The Frondend is developed with HTML, CSS and JS. The user can typ a word in the input field and click "Text generieren". The generated text output will start with the entered word.
