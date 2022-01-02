@@ -7,10 +7,15 @@ Our idea was to train a model with Swiss dialect songs to generate our own Swiss
 To make the result accessible to others, we have developed a frontend with which everyone can generate their own Swiss dialect song.
 
 ## Process
-We have compiled a dataset of 200 Swiss dialect songs from [songtexte.com](https://www.songtexte.com/) from different artists in a txt file. With these we trained the ML5 CharRNN model. We tried in different steps with more and more songs and different number of runs, how the result comes out, until we were satisfied. Then we exported the model so that we could generate song lyrics locally in a selfcreated frontend.
+We have compiled a dataset of 200 Swiss dialect songs from [songtexte.com](https://www.songtexte.com/) from different artists in one txt file. With these we trained the ML5 CharRNN model. Before we used ML5 with the CharRnn we tried the Model from Tensorflow in different steps with more and more songs and different number of runs, how the result comes out, until we were satisfied.
 
 **Training Progress**
 ![Training Progress](./_Material/training-progress.png)
+
+Then we exported the trained model from the ML5 CharRNN in ML5.js. We used also a Colab-Notebook for this in which e set up the following Code:
+![Training Progress](./_Material/training-progress.png)
+
+so that we could generate song lyrics locally in a selfcreated frontend.
 
 ## Frontend
 The Frondend is developed with HTML, CSS and JS. The user can typ a word in the input field and click "Text generieren". The generated text output will start with the entered word.
